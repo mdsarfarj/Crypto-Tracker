@@ -1,0 +1,136 @@
+.grid-item-link{
+  text-decoration: none;
+}
+.grid-item {
+  width: 300px;
+  height: 300px;
+  background-color: var(--darkgrey);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  z-index: 1;
+}
+.grid-item:hover {
+  border: 1px solid var(--green) !important;
+  transition: all 0.3s;
+}
+.grid-red:hover {
+  border: 1px solid var(--red) !important;
+  transition: all 0.3s;
+}
+.data-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.coin-logo {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.name-col {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+}
+.coinSymbol {
+  color: var(--black);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.coinName {
+  color: var(--grey);
+  text-transform: capitalize;
+  font-weight: light;
+  font-size: 1rem;
+  margin: 0;
+}
+.chip-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0rem;
+}
+.price-chip {
+  border: 2px solid var(--green);
+  color: var(--green);
+  border-radius: 2rem;
+  padding: 0.25rem 1.25rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  height: 2rem;
+  min-width: 60px;
+  max-width: 100px;
+}
+
+.icon-chip {
+  border: 2px solid var(--green);
+  color: var(--green);
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-chip:hover,
+.icon-chip:hover {
+  background-color: var(--green);
+  color: var(--black);
+  transition: all 0.3s;
+}
+.chip-red {
+  border: 2px solid var(--red) !important;
+  color: var(--red) !important;
+}
+.chip-red:hover {
+  background-color: var(--red) !important;
+  color: var(--black) !important;
+  transition: all 0.3s;
+}
+.Coin-price {
+  color: var(--green) !important;
+  border: none !important;
+  text-align: left;
+  padding: 0;
+}
+.Coin-price-red {
+  color: var(--red) !important;
+}
+.total-volume,
+.mkt-Cap {
+  font-size: 0.9rem;
+  color: var(--grey);
+}
+
+@media only screen and (max-width: 768px) {
+  .price-chip {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.7rem;
+    height: 1.5rem;
+    min-width: 30px;
+    transform: scale(0.8);
+  }
+  .icon-chip {
+    height: 1.8rem;
+    width: 1.8rem;
+    transform: scale(0.8);
+
+  }
+  .coinSymbol {
+    font-size: 0.7rem;
+  }
+  .coinName {
+    font-size: 0.6rem;
+  }
+
+}

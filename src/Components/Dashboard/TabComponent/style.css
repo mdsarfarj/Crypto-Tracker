@@ -1,0 +1,28 @@
+.gridView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 2rem;
+}
+.ListViewTable,.ListView{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ListView {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .gridView {
+    gap: 1rem;
+    margin: 0.8rem 0.8rem;
+  }
+  .ListViewTable,.ListView{
+    width: 100%;
+  }
+
+}

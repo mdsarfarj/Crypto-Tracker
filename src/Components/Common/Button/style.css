@@ -1,0 +1,20 @@
+.btn,.outlined-Btn{
+    text-align: center;
+    padding: 0.8rem;
+    background-color: var(--primary);
+    color: var(--black);
+    border-radius: 1.5rem;
+    font-weight: 600;
+    border: none;
+    width: 10rem;
+    min-width: 100px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.btn:hover,.outlined-Btn:hover{
+box-shadow: 5px 5px 10px var(--primary);
+}
+.outlined-Btn{
+    background-color: transparent;
+    outline: 1px solid var(--primary);
+}
